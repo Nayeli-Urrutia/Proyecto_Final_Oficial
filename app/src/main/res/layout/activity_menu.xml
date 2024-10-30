@@ -10,7 +10,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+
+        >
 
         <!-- Fila 1 de botones -->
         <LinearLayout
@@ -22,7 +24,7 @@
             <Button
                 android:id="@+id/btnPlatos"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="75dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:text="@string/btnPlatos"
@@ -31,7 +33,7 @@
             <Button
                 android:id="@+id/btnBebidas"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="75dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:text="@string/btnBebidas"
@@ -47,7 +49,7 @@
             <Button
                 android:id="@+id/btnGaleria"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="75dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:text="@string/btnGaleria"
@@ -56,7 +58,7 @@
             <Button
                 android:id="@+id/btnEmpresa"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="75dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:text="@string/btnEmpresa"
@@ -72,7 +74,7 @@
             <Button
                 android:id="@+id/btnMapa"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="75dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:text="@string/btnMapa"
@@ -81,21 +83,33 @@
             <Button
                 android:id="@+id/btnPedido"
                 android:layout_width="0dp"
-                android:layout_height="100dp"
+                android:layout_height="75dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
                 android:text="@string/btnPedido"
                 android:textColor="@color/white" />
         </LinearLayout>
 
+
         <!-- Trabaja con Nosotros -->
         <Button
+            android:id="@+id/btnfin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@string/btnfin"
+            android:textColor="@color/white" />
+
+        <!-- Trabaja con Nosotros -->
+        <Button
+
             android:id="@+id/btnUnete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:text="@string/btnUnete"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            />
 
     </LinearLayout>
 </ScrollView>

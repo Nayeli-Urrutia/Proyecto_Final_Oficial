@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/TextxNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/TextxNombre"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/TextxTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/TextxTelefono"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/TextxEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/TextxEmail"
+    android:inputType="textEmailAddress"
+    android:textSize="24sp"
+    android:minHeight="48dp"
+    android:padding="12dp"
+     />
+
+    <EditText
+        android:id="@+id/editTextDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/editTextDireccion"
+        android:minHeight="48dp"
+        android:padding="12dp"
+
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonGuardar"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSeguir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btnSeguir" />
+
+
+
+</LinearLayout>

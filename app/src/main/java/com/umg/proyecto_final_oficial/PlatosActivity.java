@@ -56,7 +56,13 @@ public class PlatosActivity extends AppCompatActivity {
     }
 
     private void saveSelection(String itemName, String itemPrice, String itemType) {
-        dbHelper.insertSelectedItem(itemName, itemPrice, itemType); // Cambiado a insertSelectedItem
+        try {
+            // Convertir el precio de String a double
+            double price = Double.parseDouble(itemPrice.replace("Q", "").trim()); // Ajusta según el formato real
+            dbHelper.insertSelectedItem(itemName, price, itemType); // Pasamos el precio como double
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Error al agregar el precio del plato.", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void showAddedMessage(String itemName) {

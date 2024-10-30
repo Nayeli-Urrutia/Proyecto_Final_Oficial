@@ -1,6 +1,9 @@
 package com.umg.proyecto_final_oficial;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +18,10 @@ import com.umg.proyecto_final_oficial.BaseDatos.DbHelper;
 public class BebidasActivity extends AppCompatActivity {
 
     private DbHelper dbHelper;
+
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +45,8 @@ public class BebidasActivity extends AppCompatActivity {
             showAddedMessage(itemName); // Mostrar mensaje de agregado
         });
 
+
+
         MaterialCardView cardView2 = findViewById(R.id.cardViewBebida2);
         cardView2.setOnClickListener(v -> {
             String itemName = getString(R.string.TextBebi2);
@@ -56,10 +65,18 @@ public class BebidasActivity extends AppCompatActivity {
     }
 
     private void saveSelection(String itemName, String itemPrice, String itemType) {
-        dbHelper.insertSelectedItem(itemName, itemPrice, itemType); // Cambiado a insertSelectedItem
+        try {
+            // Convertir el precio de String a double
+            double price = Double.parseDouble(itemPrice.replace("Q", "").trim()); // Asegúrate de ajustar según el formato real de precio
+            dbHelper.insertSelectedItem(itemName, price, itemType); // Ahora pasamos el precio como double
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Error al agregar el precio de la bebida.", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void showAddedMessage(String itemName) {
         Toast.makeText(this, itemName + " ha sido agregado a la orden.", Toast.LENGTH_SHORT).show();
     }
+
+
 }

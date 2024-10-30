@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         // Configura el botón para abrir MenuActivity
         Button btnBienvenidos = findViewById(R.id.btnBienvenidos);
         btnBienvenidos.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+            Intent intent = new Intent(MainActivity.this, DatosActivity.class);
             startActivity(intent);
         });
     }

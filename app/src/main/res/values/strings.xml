@@ -9,6 +9,7 @@
     <string name="btnMapa">MAPA</string>
     <string name="btnPedido">PEDIDO</string>
     <string name="btnUnete">¡TRABAJA CON NOSOTROS!</string>
+    <string name="btnfin">FINALIZAR PEDIDO</string>
 
     <string name="TextViewHam"> HAMBURGUESA GOURMET</string>
     <string name="price">Q55.00</string>
@@ -42,6 +43,25 @@
     <string name="btnLeer">VER</string>
     <string name="btnActualizar">ACTUALIZAR</string>
     <string name="btnEliminar">ELIMINAR</string>
+
+
+    //FACTURA
+    <string name="TITULO">FACTURA</string>
+    <string name="listViewFactura">""</string>
+    <string name="txtTotalFactura">Total</string>
+    <string name="buttonListo">Listo</string>
+    <string name="txtClienteInfo">Informacion de Clientes</string>
+
+
+
+    //DATOS
+    <string name="TextxNombre">Nombre</string>
+    <string name="TextxTelefono">Telefono</string>
+    <string name="TextxEmail">"Email"</string>
+    <string name="buttonSeleccionarDireccion">Dirección</string>
+    <string name="buttonGuardar">Guardar</string>
+    <string name="btnSeguir">Continuar</string>
+    <string name="editTextDireccion">Dirección</string>
 
 
 </resources>

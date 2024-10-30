@@ -1,0 +1,58 @@
+<!-- res/layout/activity_factura.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la Factura -->
+    <TextView
+        android:id="@+id/TITULO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/TITULO"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Lista de productos -->
+    <ListView
+        android:id="@+id/listViewFactura"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+
+    <TextView
+        android:id="@+id/txtClienteInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información del Cliente"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Total del Pedido -->
+    <TextView
+        android:id="@+id/txtTotalFactura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:text="@string/txtTotalFactura"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/buttonListo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/buttonListo" />
+
+
+</LinearLayout>
